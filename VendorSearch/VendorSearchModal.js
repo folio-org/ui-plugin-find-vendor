@@ -55,7 +55,7 @@ export default class VendorSearchModal extends React.Component {
       <Modal onClose={this.closeModal} size="large" open={this.props.openWhen} label="Select Vendor" dismissible>
         <div className={css.vendorSearchModal}>
           {this.state.error ? <div className={css.vendorError}>{this.state.error}</div> : null}
-          <this.connectedApp {...this.props} onSelectRow={this.passVendorrOut} onComponentWillUnmount={this.props.onCloseModal} showSingleResult={false} browseOnly />
+          <this.connectedApp {...this.props} onSelectRow={this.passVendorOut} onComponentWillUnmount={this.props.onCloseModal} showSingleResult={false} browseOnly />
         </div>
       </Modal>
     );
