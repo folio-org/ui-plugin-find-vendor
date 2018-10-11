@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Vendors from '@folio/vendors/src/Main';
-import Modal from '@folio/stripes-components/lib/Modal';
+import { Modal } from '@folio/stripes/components';
 
 import css from './VendorSearch.css';
 
