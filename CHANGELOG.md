@@ -2,7 +2,7 @@
 
 ## [1.1.0](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.1.0) (2018-10-12)
 
-* Use stripes framework v1.0
+* Use stripes framework v1.0, FOLIO-1549
 
 
 ## [1.0.0](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.0.0) (2018-09-13)
