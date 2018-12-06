@@ -1,5 +1,9 @@
 # Change history for ui-plugin-find-vendor
 
+## [1.2.0](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.2.0) (2018-12-6)
+
+* Add translations. Ref. UIOR-6.
+
 ## [1.1.0](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.1.0) (2018-10-12)
 
 * Use stripes framework v1.0, FOLIO-1549
