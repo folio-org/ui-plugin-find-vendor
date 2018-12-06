@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 import Vendors from '@folio/vendors/src/Main';
 import { Modal } from '@folio/stripes/components';
 
 import css from './VendorSearch.css';
 
-export default class VendorSearchModal extends React.Component {
+export default class VendorSearchModal extends Component {
   static propTypes = {
     stripes: PropTypes.shape({
       connect: PropTypes.func.isRequired,
@@ -52,7 +53,13 @@ export default class VendorSearchModal extends React.Component {
 
   render() {
     return (
-      <Modal onClose={this.closeModal} size="large" open={this.props.openWhen} label="Select Vendor" dismissible>
+      <Modal
+        onClose={this.closeModal}
+        size="large"
+        open={this.props.openWhen}
+        label={<FormattedMessage id="ui-plugin-find-vendor.modal.label" />}
+        dismissible
+      >
         <div className={css.vendorSearchModal}>
           {this.state.error ? <div className={css.vendorError}>{this.state.error}</div> : null}
           <this.connectedApp {...this.props} onSelectRow={this.passVendorOut} onComponentWillUnmount={this.props.onCloseModal} showSingleResult={false} browseOnly />

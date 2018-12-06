@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 import { Button, Icon } from '@folio/stripes/components';
 import className from 'classnames';
@@ -6,7 +7,7 @@ import className from 'classnames';
 import css from './VendorSearch.css';
 import VendorSearchModal from './VendorSearchModal';
 
-export default class VendorSearch extends React.Component {
+class VendorSearch extends Component {
   constructor(props) {
     super(props);
 
@@ -42,16 +43,20 @@ export default class VendorSearch extends React.Component {
   render() {
     return (
       <div className={this.getStyle()}>
-        <Button
-          id="clickable-plugin-find-vendor"
-          key="searchButton"
-          buttonStyle={this.props.searchButtonStyle}
-          onClick={this.openModal}
-          title="Find Vendor"
-          tabIndex="-1"
-        >
-          {this.props.searchLabel ? this.props.searchLabel : <Icon icon="search" color="#fff" />}
-        </Button>
+        <FormattedMessage id="ui-plugin-find-vendor.searchButton.title">
+          {ariaLabel => (
+            <Button
+              id="clickable-plugin-find-vendor"
+              key="searchButton"
+              buttonStyle={this.props.searchButtonStyle}
+              onClick={this.openModal}
+              ariaLabel={ariaLabel}
+              tabIndex="-1"
+            >
+              {this.props.searchLabel ? this.props.searchLabel : <Icon icon="search" color="#fff" />}
+            </Button>
+          )}
+        </FormattedMessage>
         <VendorSearchModal
           openWhen={this.state.openModal}
           closeCB={this.closeModal}
@@ -72,3 +77,5 @@ VendorSearch.propTypes = {
   marginBottom0: PropTypes.bool,
   marginTop0: PropTypes.bool,
 };
+
+export default VendorSearch;
