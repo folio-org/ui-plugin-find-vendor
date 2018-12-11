@@ -1,3 +1,5 @@
 {
-    "meta.title": "Szállító-kereső (plugin)"
+    "meta.title": "Szállító-kereső (plugin)",
+    "modal.label": "Select Vendor",
+    "searchButton.title": "Find Vendor"
 }
