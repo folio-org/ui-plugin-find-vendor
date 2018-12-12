@@ -1,3 +1,5 @@
 {
-    "meta.title": "باحث المزود (برنامج مساعد)"
+    "meta.title": "باحث المزود (برنامج مساعد)",
+    "modal.label": "Select Vendor",
+    "searchButton.title": "Find Vendor"
 }
