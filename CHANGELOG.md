@@ -1,6 +1,6 @@
 # Change history for ui-plugin-find-vendor
 
-## [1.3.0](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.3.0) (2018-03-7)
+## [1.3.0](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.3.0) (2019-03-7)
 
 * Fixed default query when loading modal. Ref. UIV-69. 
 
