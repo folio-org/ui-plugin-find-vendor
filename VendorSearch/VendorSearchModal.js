@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 import Vendors from '@folio/vendors/src/Main';
 import { Modal } from '@folio/stripes/components';
-
+import packageInfo from '../package';
 import css from './VendorSearch.css';
 
 export default class VendorSearchModal extends Component {
@@ -62,7 +62,7 @@ export default class VendorSearchModal extends Component {
       >
         <div className={css.vendorSearchModal}>
           {this.state.error ? <div className={css.vendorError}>{this.state.error}</div> : null}
-          <this.connectedApp {...this.props} onSelectRow={this.passVendorOut} onComponentWillUnmount={this.props.onCloseModal} showSingleResult={false} browseOnly />
+          <this.connectedApp {...this.props} packageInfo={packageInfo} onSelectRow={this.passVendorOut} onComponentWillUnmount={this.props.onCloseModal} showSingleResult={false} browseOnly />
         </div>
       </Modal>
     );
