@@ -1,6 +1,6 @@
 {
   "name": "@folio/plugin-find-vendor",
-  "version": "1.2.0",
+  "version": "v1.3.0",
   "description": "Vendor-finder for Stripes",
   "repository": "folio-org/ui-plugin-find-vendor",
   "publishConfig": {
