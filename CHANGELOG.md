@@ -2,7 +2,7 @@
 
 ## [1.3.0](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.3.0) (2019-03-7)
 
-* Fixed default query when loading modal. Ref. UIV-69. 
+* Fixed default query when loading modal. Ref. UIV-69.
 
 ## [1.2.0](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.2.0) (2018-12-6)
 
