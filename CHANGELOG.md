@@ -1,5 +1,10 @@
 # Change history for ui-plugin-find-vendor
 
+
+## [1.3.2](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.3.2) (2019-03-28)
+
+* Correct stripes dependency
+
 ## [1.3.1](https://github.com/folio-org/ui-plugin-find-vendor/tree/v1.3.1) (2019-03-28)
 
 * Update translations
